@@ -3,6 +3,20 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-bottom: 1px solid #ddd;
+  background: #f8f9fa;
+  padding-right:  100px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  .page_nome {padding-right:  100px;}
+}
+
 ul { list-style: none; padding-left: 5px; }
 a { color:blue; text-decoration: none;}
 .bar {
@@ -22,15 +36,22 @@ a { color:blue; text-decoration: none;}
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.footer {
+footer {
+    text-align: center;
+    align-content: center;
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
 }
 .anchors {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
+    position: sticky; top: 0px;
+    height: 100%;
+    ul {position: sticky; top: 20px;}
+    li {margin: 10px;}
 }
 .sidebar {
+    position: sticky; top: 20px;
     border-right: solid 1px #cdcdcd;
 }
 figure {
